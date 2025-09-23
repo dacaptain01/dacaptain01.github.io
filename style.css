@@ -8,7 +8,7 @@ h1 {
 }
 .player {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0;italic;
 }
 .player img {
   border-radius: 10px; /* makes corners round */
