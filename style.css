@@ -6,5 +6,19 @@ body {
 h1 {
   color: darkblue;
 }
+.player {
+  text-align: center;
+  margin: 20px 0;
+}
+.player img {
+  border-radius: 10px; /* makes corners round */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* nice shadow */
+}
+.player figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #333;
+}
+
 
 
