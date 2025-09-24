@@ -19,6 +19,126 @@ h1 {
   margin-top: 8px;
   color: #333;
 }
+/* ===== News Section ===== */
+#news {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+#news h2 {
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0077b6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#news article {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 4px solid #0077b6;
+  background: #fff;
+  border-radius: 6px;
+}
+
+#news article h3 {
+  margin: 0;
+  color: #0077b6;
+}
+
+/* ===== Players Section ===== */
+#players {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+}
+
+.player-card img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ===== Matches Section ===== */
+#matches {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+#matches h2 {
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0077b6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#matches table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#matches th, 
+#matches td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#matches th {
+  background: #0077b6;
+  color: #fff;
+}
+
+#matches tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+#matches tr:hover {
+  background: #eaf4fc;
+}
+/* ===== Footer ===== */
+footer {
+  background: #222;          /* Dark background */
+  color: #fff;               /* White text */
+  text-align: center;        /* Center everything */
+  padding: 20px 10px;
+  margin-top: 30px;
+  border-top: 4px solid #0077b6; /* Accent line on top */
+}
+
+footer a {
+  color: #00b4d8;            /* Light blue links */
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #90e0ef;            /* Softer blue on hover */
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 14px;
+}
 
 
 
