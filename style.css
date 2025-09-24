@@ -1,109 +1,156 @@
+/* ===== Global Styles ===== */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  text-align: margin;
-  border-radius: 8px
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
 }
+
+h1, h2, h3 {
+  margin: 0 0 15px;
+}
+
 h1 {
-  color: darkblue;
+  color: #003366;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.2em;
 }
+
+/* ===== Player Section (Profile / Single Display) ===== */
 .player {
   text-align: center;
-  margin: 20px 0;italic;
+  margin: 30px auto;
+  max-width: 300px;
 }
+
 .player img {
-  border-radius: 10px; /* makes corners round */
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* nice shadow */
+  width: 100%;
+  max-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
+
 .player figcaption {
   font-style: italic;
-  margin-top: 8px;
-  color: #333;
+  margin-top: 10px;
+  color: #555;
 }
+
 /* ===== News Section ===== */
 #news {
-  background: #f9f9f9;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
+  background: #fff;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 #news h2 {
-  color: #333;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #0077b6;
+  color: #003366;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #0077b6;
   display: inline-block;
   padding-bottom: 5px;
+  font-size: 1.6em;
 }
 
 #news article {
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 25px;
+  padding: 15px;
   border-left: 4px solid #0077b6;
-  background: #fff;
+  background: #fdfdfd;
   border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#news article:hover {
+  background: #f4faff;
 }
 
 #news article h3 {
-  margin: 0;
+  margin: 0 0 10px;
   color: #0077b6;
+  font-size: 1.2em;
 }
 
-/* ===== Players Section ===== */
+/* ===== Players Section (Grid) ===== */
 #players {
-  margin: 40px auto;            /* space above and below, auto centers */
-  max-width: 900px;             /* keeps content nicely contained */
-  text-align: center;           /* center the section heading & text */
+  margin: 50px auto;
+  max-width: 1100px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#players h2 {
+  font-size: 1.8em;
+  color: #003366;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #0077b6;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .players-grid {
-  display: flex;                /* use flexbox instead of grid */
-  flex-wrap: wrap;              /* wrap on smaller screens */
-  justify-content: center;      /* center the cards */
-  gap: 20px;                    /* space between cards */
-  margin-top: 20px;             /* little breathing room under heading */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
 }
 
 .player-card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 15px;
-  width: 200px;                 /* fixed size for neatness */
-  text-align: center;           /* center the text inside */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .player-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
+.player-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 
 /* ===== Matches Section ===== */
 #matches {
-  background: #f9f9f9;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
+  background: #fff;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 #matches h2 {
-  color: #333;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #0077b6;
+  color: #003366;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #0077b6;
   display: inline-block;
   padding-bottom: 5px;
+  font-size: 1.6em;
 }
 
 #matches table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 15px;
 }
 
 #matches th, 
 #matches td {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ddd;
   text-align: left;
 }
@@ -111,38 +158,43 @@ h1 {
 #matches th {
   background: #0077b6;
   color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 #matches tr:nth-child(even) {
-  background: #f2f2f2;
+  background: #f9f9f9;
 }
 
 #matches tr:hover {
-  background: #eaf4fc;
+  background: #eef7ff;
 }
+
 /* ===== Footer ===== */
 footer {
-  background: #222;          /* Dark background */
-  color: #fff;               /* White text */
-  text-align: center;        /* Center everything */
-  padding: 20px 10px;
-  margin-top: 30px;
-  border-top: 4px solid #0077b6; /* Accent line on top */
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+  border-top: 5px solid #0077b6;
 }
 
 footer a {
-  color: #00b4d8;            /* Light blue links */
+  color: #00c4ff;
   text-decoration: none;
-  margin: 0 8px;
+  margin: 0 10px;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #90e0ef;            /* Softer blue on hover */
+  color: #90e0ef;
 }
 
 footer p {
-  margin: 8px 0;
+  margin: 10px 0 0;
   font-size: 14px;
 }
 
